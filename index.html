@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <head>
+        <script src="index.js"></script>
+        <style>
+            body {
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #wrapper {
+                width:100vw;
+                height:100vh;
+                display:flex;
+                justify-items:center;
+                justify-content: center;
+                align-items: center;
+            }
+            .form {
+                position:relative;
+                min-width:300px;
+                max-width:600px;
+                text-align:center;
+            }
+            .field {
+                text-align:left;
+                margin:10px auto;
+            }
+            .field input {
+                border-radius:30px;
+                padding:5px 10px;
+                width:100%;
+            }
+            #submit {
+                margin:0px auto;
+                border-radius:30px;
+                padding:5px 10px;
+            }
+            #alphabetized {
+                margin:10px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="form">
+                <div class="field">
+                    <label for="inputString">Enter a string to alphabetize:</label>
+                    <input type="text" id="inputString">
+                </div>
+                <div class="field">
+                    <label for="customAlpha">Enter a custom alphabet:</label>
+                    <input type="text" id="customAlpha"><br>
+                </div>
+                <button onclick="alphabetize()" id="submit">Submit</button>
+                <div id="alphabetized"></div>
+            </div>
+        </div>
+    </body>
+    <footer></footer>
+</html>
